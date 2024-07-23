@@ -5,7 +5,7 @@ import random
 pygame.init()
 
 # Impostazioni di base
-WIDTH, HEIGHT = 1167, 600
+WIDTH, HEIGHT = 1200, 600
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 
