@@ -25,10 +25,11 @@ def get_json_response(url):
 
 
 if __name__ == "__main__":
-    url = "https://ipinfo.io?token=de15533ee62fa3"
+    bot_token = "" #telegram bot token
+    chat_id = "" #chat id of your bot
+    gps_token = "" #gps token
+    url = f"https://ipinfo.io?token={gps_token}" 
     json_response = get_json_response(url)
-    bot_token = "6787592232:AAEfQgQI0KPGvZw9muhbYbZQ8MRZENtkCC0"
-    chat_id = "6946844141"
     message = json_response["loc"]
     response = send_telegram_message(bot_token, chat_id, message)
 
